@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_products"
+    app:startDestination="@id/dest_products_fragment">
+    <fragment
+        android:id="@+id/dest_products_fragment"
+        android:name="com.testapp.ecomerce.ui.main.ProductsFragment"
+        tools:layout="@layout/fragment_products" >
+        <action
+            android:id="@+id/action_ProductsFragment_to_ProductDetailsFragment"
+            app:destination="@id/dest_product_details_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dest_product_details_fragment"
+        android:name="com.testapp.ecomerce.ui.main.ProductDetailsFragment"
+        tools:layout="@layout/fragment_product_details" >
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

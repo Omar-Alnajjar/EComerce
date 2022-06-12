@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EComerce</string>
+    <string name="title_products">Products</string>
+    <string name="action_try_again">Try Again</string>
+</resources>
